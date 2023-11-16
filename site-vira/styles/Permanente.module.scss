@@ -1,0 +1,56 @@
+@import 'variaveis';
+@import 'mixins';
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $cor-principal;
+    padding: 0.5rem 0 0.5rem 0;
+
+    
+
+    img {
+        width: 5rem;
+        margin-left: 4rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 4rem;
+        
+        .lista_menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            .item_menu {
+                list-style: none;
+                margin-left: 2rem;
+
+                :hover {
+                    color: $cor-hover;
+                }
+                
+
+                a {
+                    text-decoration: none;
+                    @include texto-normal ($fonte-pequena, $cor-secundaria); 
+
+                    :hover {
+                        color: $cor-texto;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import 'variaveis';
+
+@mixin texto-destaque ($tamanho, $cor)   {
+    font-size: $tamanho;
+    font-weight: 800;
+    color: $cor;
+    font-family: $fonte-principal;
+}
+
+@mixin texto-normal ($tamanho, $cor)  {
+    font-size: $tamanho;
+    font-weight: 400;
+    color: $cor;
+    font-family: $fonte-principal;
+}
+
+@mixin card ($tamanho) {
+    width: $tamanho;
+    height: $tamanho - 5rem;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+   
+}
