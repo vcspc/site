@@ -21,13 +21,15 @@ export default function Document() {
         <Main />
         <NextScript />
         <footer>
-            <p className="assinatura">&copy; 2023 Vinícius Costa</p>
-            <ul className="contato">
-                <li className="item_contato"><a href="#">Linkedin</a></li>
-                <li className="item_contato"><a href="#">Github</a></li>
-                <li className="item_contato"><a href="#">vinicius.costa.devf@gmail.com</a></li>
-                <li className="item_contato"><a href="#">(11) 97526- 0411</a></li>
-            </ul>
+            <div className='container'>
+              <p className="assinatura">&copy; 2023 Vinícius Costa</p>
+              <ul className="contato">
+                  <li className="item_contato"><a href="#">Linkedin</a></li>
+                  <li className="item_contato"><a href="#">Github</a></li>
+                  <li className="item_contato"><a href="#">vinicius.costa.devf@gmail.com</a></li>
+                  <li className="item_contato"><a href="#">(11) 97526- 0411</a></li>
+              </ul>
+            </div>
         </footer>
       </body>
     </Html>
