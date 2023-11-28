@@ -1,0 +1,46 @@
+@import 'variaveis';
+@import 'mixins';
+
+.sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 4rem 0 0 0;
+
+    .sobre__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        width: 45%;
+
+        .sobre__texto__titulo {
+            @include texto-destaque ($fonte-grande, $cor-texto);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .sobre__texto__subtitulo {
+            @include texto-normal ($fonte-media, $cor-texto);
+            margin: 0 0 0.5rem 0;
+            line-height: 25px;
+        }
+
+        .sobre__texto__conteudo {
+            @include texto-normal ($fonte-pequena, $cor-texto);
+            line-height: 25px;
+            text-align: end;
+        }
+    }
+
+    .sobre__img {
+        width: 45%;
+        margin: 0 2rem 0 0;
+
+        img {
+            width: 100%;
+        }
+    
+    }
+}
