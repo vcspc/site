@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="pt-br">
       <Head />
       <body>
-        <header>
+        {/* <header>
             <div className="container">
               <img src="./logo_vira.svg" alt="logo do site" className="logo"/>
               <nav className="menu">
@@ -17,10 +17,10 @@ export default function Document() {
                   </ul>
               </nav>
             </div>  
-        </header>
+        </header> */}
         <Main />
         <NextScript />
-        <footer>
+        {/* <footer>
             <div className='container'>
               <p className="assinatura">&copy; 2023 Vinícius Costa</p>
               <ul className="contato">
@@ -30,7 +30,7 @@ export default function Document() {
                   <li className="item_contato"><a href="#">(11) 97526- 0411</a></li>
               </ul>
             </div>
-        </footer>
+        </footer> */}
       </body>
     </Html>
   )
