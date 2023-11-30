@@ -23,6 +23,7 @@ export default function Sobre() {
                     titulo="Vinícius Costa"
                     subtitulo="Desenvolvedor Web"
                     descricao="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. afhjkhdfieiuh nasjkhkah nkjdhwepç badhiowkj uwedjdfkjnabe wnekjwheidjal njkwaeiuwoifjan jkweiwhfnkankje owewjfh whdkja wheuiwhouehkj naiwunajfniuaow jiwieuw u kjkjarkqwj"
+                    sentido="direita"
                 />
                     
                 </section>
