@@ -1,0 +1,23 @@
+@import 'variaveis';
+@import 'mixins';
+
+.rede {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+    .rede__img{
+        width: 20rem;
+    }
+
+    .rede__texto{
+        @include texto-normal ($fonte-grande, $cor-texto);
+        line-height: 25px;
+        text-decoration: none;
+
+
+    }
+}

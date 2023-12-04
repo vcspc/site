@@ -1,0 +1,89 @@
+@import 'variaveis';
+@import 'mixins';
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 6rem 0 0 0;
+
+    .container_id {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        .titulo {
+            @include texto-normal ($fonte-grande, $cor-principal);
+            margin: 0 0 1.5rem 0;
+        }
+
+        .label {
+            @include texto-normal ($fonte-pequena + 0.2rem, $cor-principal);
+            margin: 0rem 0 1rem 0;
+            
+        }
+
+        .input {
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 5px;
+            border-width: thin;
+            margin: 0 0 1rem 0;
+            border-color: $cor-input;
+            font-size: $fonte-pequena;
+            font-family: $fonte-principal;
+            color: $cor-input-texto;
+            padding: 0 0.8rem 0 0.8rem;
+
+        }
+
+        
+    }
+
+    .container_mensagem {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        .mensagem {
+            @include texto-normal ($fonte-pequena + 0.2rem, $cor-principal);
+            margin: 0rem 0 1rem 0;
+            margin-top: 4rem;
+        }
+
+        .textarea {
+            width: 100%;
+            height: 9rem;
+            border-radius: 5px;
+            border-width: thin;
+            margin: 0 0 1rem 0;
+            border-color: $cor-input;
+            font-size: $fonte-pequena;
+            font-family: $fonte-principal;
+            color: $cor-input-texto;
+            padding: 0 0.8rem 0 0.8rem;
+        }
+
+    }
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    justify-content: flex-end;
+    margin: 0 0 13rem 0;
+
+    .button {
+        width: 9rem;
+        height: 3rem;
+        color: $cor-secundaria;
+        background-color: $cor-butao;
+        font-size: $fonte-pequena;
+        border-radius: 5px;
+        font-family: $fonte-principal;
+        font-weight: 600;
+    }
+
+}
