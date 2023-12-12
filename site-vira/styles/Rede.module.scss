@@ -3,20 +3,28 @@
 
 .rede {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
+    width: 13em;
+
+    .rede__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
 
 
     .rede__img{
-        width: 20rem;
+        width: 4em;
     }
 
     .rede__texto{
-        @include texto-normal ($fonte-grande, $cor-texto);
-        line-height: 25px;
-        text-decoration: none;
+        @include texto-normal ($fonte-pequena + 0.5rem, $cor-texto);
+        margin-left: 0.5em;
+        font-weight: 600;
 
 
     }

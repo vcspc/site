@@ -4,9 +4,9 @@ import styles from '../styles/Rede.module.scss';
 export default function Rede(props) {
     return (
         <div className={styles.rede}>
-            <Link href={props.link}>
+            <Link className={styles.rede__link} href={props.link}>
                 <img className={styles.rede__img} src={props.src} alt={props.alt} />
-                <p className={styles.rede__texto}>{props.texto}</p>
+                <p className={styles.rede__texto} style={{color: props.cor}}>{props.texto}</p>
             </Link>
         </div>
     );
