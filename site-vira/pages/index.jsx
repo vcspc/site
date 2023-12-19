@@ -8,7 +8,7 @@ export default function Home() {
       <Layout>
         <section className="apresentacao">
           
-          </section>
+        </section>
           <section className={styles.destaques}>
               <div className={styles.divisoria}>
                   <hr/>

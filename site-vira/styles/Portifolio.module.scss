@@ -1,0 +1,20 @@
+@import 'variaveis';
+@import 'mixins';
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.portifolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    height: 60em;
+    margin: 2em 0 0 0;
+}

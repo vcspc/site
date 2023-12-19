@@ -5,9 +5,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
-    margin: 4rem 0 0 0;
+    margin: 4em 0 0 0;
 
     .sobre__texto {
         display: flex;
@@ -17,26 +17,25 @@
         width: 45%;
 
         .sobre__texto__titulo {
-            @include texto-destaque ($fonte-grande, $cor-texto);
-            margin: 0 0 0.5rem 0;
+            @include texto-destaque (4.5em, $cor-texto);
+            margin: 0 0 0.7em 0;
         }
 
         .sobre__texto__subtitulo {
             @include texto-normal ($fonte-media, $cor-texto);
-            margin: 0 0 0.5rem 0;
-            line-height: 25px;
+            margin: 0 0 0.7em 0;
         }
 
         .sobre__texto__conteudo {
             @include texto-normal ($fonte-pequena, $cor-texto);
-            line-height: 25px;
+            line-height: 30px;
             text-align: end;
         }
     }
 
     .sobre__img {
         width: 45%;
-        margin: 0 2rem 0 0;
+        margin: 0 2em 0 0;
 
         img {
             width: 100%;
@@ -51,9 +50,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
-    margin: 4rem 0 0 0;
+    margin: 4em 0 0 0;
 
     .sobre__texto__direita {
         display: flex;
@@ -63,26 +62,25 @@
         width: 45%;
 
         .sobre__texto__titulo__direita {
-            @include texto-destaque ($fonte-grande, $cor-texto);
-            margin: 0 0 0.5rem 0;
+            @include texto-destaque (4.5em, $cor-texto);
+            margin: 0 0 0.7rem 0;
         }
 
         .sobre__texto__subtitulo__direita {
             @include texto-normal ($fonte-media, $cor-texto);
-            margin: 0 0 0.5rem 0;
-            line-height: 25px;
+            margin: 0 0 0.7em 0;
         }
 
         .sobre__texto__conteudo__direita {
             @include texto-normal ($fonte-pequena, $cor-texto);
-            line-height: 25px;
+            line-height: 30px;
             text-align: start;
         }
     }
 
     .sobre__img__direita {
         width: 45%;
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 2em;
 
         img {
             width: 100%;
