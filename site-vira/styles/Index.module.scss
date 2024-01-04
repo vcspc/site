@@ -1,6 +1,12 @@
 @import 'variaveis';
 @import 'mixins';
 
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .destaques {
     display: flex;
     flex-direction: column;
@@ -34,8 +40,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 85%;
-        margin: 1rem 0 3rem 0;
+        width: 65em;
+        margin: 1em 0 3rem 0;
     }
 
 }
