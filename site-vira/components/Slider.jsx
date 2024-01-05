@@ -44,13 +44,18 @@ function Slider() {
           background: "orange",
           height: "30em",
           width: `${width}px`,
+          position: "relative",
+          zIndex: 3,
         }}
       ></div>
+      <img style={{ position: "relative", zIndex: 0, height: "30em"  }} src="./vinicius_costa.png" alt="Foto de Vinicius Costa" />
       <div style={
         {
           background: "red",
           height: "30em",
           flexGrow: 1,
+          position: "relative",
+          zIndex: 3,
         }
       }>
         
