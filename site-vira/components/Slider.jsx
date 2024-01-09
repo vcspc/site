@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useScreenWidth from "./UseScreenWidth";
 
 function Slider() {
   // Define o estado inicial da largura como 0
@@ -36,26 +37,29 @@ function Slider() {
     };
   }, []);
 
+  let meio = useScreenWidth() / 2;
+  console.log(meio)
+
   // Retorna o elemento com o estilo dinâmico
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div style={{ display: "flex", flexDirection: "row", position: "relative" }}>
       <div
         style={{
           background: "orange",
           height: "30em",
           width: `${width}px`,
           position: "relative",
-          zIndex: 3,
+          zIndex: 2,
         }}
       ></div>
-      <img style={{ position: "relative", zIndex: 0, height: "30em"  }} src="./vinicius_costa.png" alt="Foto de Vinicius Costa" />
+      <img style={{ position: "absolute", zIndex: 1, height: "30em", left: "33%"/* `${meio}px` */ }} src="./vinicius_costa.png" alt="Foto de Vinicius Costa" />
       <div style={
         {
           background: "red",
           height: "30em",
           flexGrow: 1,
           position: "relative",
-          zIndex: 3,
+          zIndex: 2,
         }
       }>
         
