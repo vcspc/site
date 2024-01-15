@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useScreenWidth from "./UseScreenWidth";
+import styles from "../styles/Slider.module.scss";
 
 function Slider() {
   // Define o estado inicial da largura como 0
@@ -45,17 +46,17 @@ function Slider() {
     <div style={{ display: "flex", flexDirection: "row", position: "relative" }}>
       <div
         style={{
-          background: "orange",
+          background: "transparent",
           height: "30em",
           width: `${width}px`,
           position: "relative",
           zIndex: 2,
         }}
       ></div>
-      <img style={{ position: "absolute", zIndex: 1, height: "30em", left: "33%"/* `${meio}px` */ }} src="./vinicius_costa.png" alt="Foto de Vinicius Costa" />
-      <div style={
+      <img className={styles.imgCoder} style={{ position: "absolute", zIndex: 1, height: "30em", left: "33%"/* `${meio}px` */ }} src="./vinicius_costa.png" alt="Foto de Vinicius Costa" />
+      <div className={styles.sliderCoder} style={
         {
-          background: "red",
+          background: "transparent",
           height: "30em",
           flexGrow: 1,
           position: "relative",

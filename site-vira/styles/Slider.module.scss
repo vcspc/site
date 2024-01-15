@@ -1,0 +1,11 @@
+@import 'variaveis';
+@import 'mixins';
+
+.imgCoder {
+    mask-image: element(.sliderCoder);
+    mask-size: 100% 100%;
+}
+
+.sliderCoder {
+    
+}
