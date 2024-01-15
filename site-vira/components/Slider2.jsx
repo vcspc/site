@@ -24,7 +24,7 @@ function Slider2() {
       />
       <img
         src="./victor_costa_completo.png"
-        className="face-image"
+        className={styles.faceImage2}
         style={{ clipPath: `inset(0 0 0 ${clipPath})` }}
         alt="Face"
       />

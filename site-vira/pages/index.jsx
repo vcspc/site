@@ -1,14 +1,14 @@
 import Card from '../components/Card';
 import styles from '../styles/Index.module.scss';
 import Layout from '../components/Layout';
-import Slider from '../components/Slider';
+import Slider2 from '../components/Slider2';
 
 export default function Home() {
   return (
     <>
       <Layout>
         <section className={styles.apresentacao}>
-          <Slider />
+          <Slider2 />
         </section>
           <section className={styles.destaques}>
               <div className={styles.divisoria}>
