@@ -4,7 +4,7 @@ import styles from '../styles/Slider2.module.scss';
 function Slider2() {
   const [clipPath, setClipPath] = useState('50%');
   const [clipPath2, setClipPath2] = useState('50%');
-  const [Position, setPosition] = useState('100%');
+  const [Position, setPosition] = useState('50%');
 
   const handleMouseMove = (event) => {
     // Calcular a posição do mouse como uma porcentagem do contêiner
@@ -12,12 +12,24 @@ function Slider2() {
     const mouseX = event.clientX - event.currentTarget.offsetLeft;
     const mousePercent = (mouseX / containerWidth) * 100;
     const invertedPercent = 100 - mousePercent;
+
+    const paddingPercent = 40; // 15% de padding de cada lado
+    const scale = 20; // Escala ajustada para 70% do container
+
+   /*  let mousePercent = ((mouseX / containerWidth) * scale) + paddingPercent;
+    mousePercent = Math.max(paddingPercent, Math.min(mousePercent, 100 - paddingPercent));
+    const invertedPercent = 100 - mousePercent;
+     */
+    // Calculando a porcentagem limitada ao intervalo de 40% a 60%
+    let mousePercent2 = ((mouseX / containerWidth) * scale) + paddingPercent;
+    mousePercent2 = Math.max(paddingPercent, Math.min(mousePercent, 100 - paddingPercent));
+    const invertedPercent2 = 100 - mousePercent2; 
     
 
     // Atualizar o estado dos clip-paths
     setClipPath(`${mousePercent}%`);
     setClipPath2(`${invertedPercent}%`);
-    setPosition(`${invertedPercent}%`);
+    setPosition(`${invertedPercent2}%`);
   };
 
   return (
