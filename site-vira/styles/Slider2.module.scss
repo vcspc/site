@@ -1,24 +1,25 @@
 .faceContainer {
   position: relative;
     width: 100%; /* Defina para a largura desejada */
-    height: 25em; /* Defina para a altura desejada */
+    height: 30em; /* Defina para a altura desejada */
   }
   
   .faceImage {
     position: absolute;
     top: 0;
-    left: 33%;
-    width: 30em;
+    left: 30%;
+    width: 37em;
     height: auto;
     object-fit: cover;
     transition: clip-path 0.1s ease-in-out;
+    
   }
 
   .faceImage2 {
     position: absolute;
     top: 0;
-    left: 33%;
-    width: 32em;
+    left: 30%;
+    width: 40em;
     height: auto;
     object-fit: cover;
     transition: clip-path 0.1s ease-in-out;
