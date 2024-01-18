@@ -1,9 +1,39 @@
+@import 'variaveis';
+@import 'mixins';
+
+
+.containerTexto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  top: 15em;
+
+
+  .textoMark {
+    
+    @include texto-destaque ($fonte-gigante, $cor-texto);
+    transition: opacity 1.5s ease;
+    
+  }
+
+  .textoDev {
+
+    @include texto-destaque ($fonte-gigante, $cor-texto);
+    transition: opacity 1.5s ease;
+    
+  }
+
+}
+
 .faceContainer {
   position: relative;
     width: 50%; /* Defina para a largura desejada */
     height: 30em; /* Defina para a altura desejada */
   }
-  
+
   .faceImage {
     position: absolute;
     top: 15em;
