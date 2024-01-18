@@ -5,13 +5,20 @@ function Slider2() {
   const [clipPath, setClipPath] = useState('50%');
   const [clipPath2, setClipPath2] = useState('50%');
   const [Position, setPosition] = useState('50%');
+  const [opacidade, setOpacidade] = useState('1');
+  const [opacidadeInvertida, setOpacidadeInvertida] = useState('1');
 
   const handleMouseMove = (event) => {
     // Calcular a posição do mouse como uma porcentagem do contêiner
-    const containerWidth = event.currentTarget.offsetWidth;
-    const mouseX = event.clientX - event.currentTarget.offsetLeft;
-    const mousePercent = (mouseX / containerWidth) * 100;
-    const invertedPercent = 100 - mousePercent;
+    const containerWidth = event.currentTarget.offsetWidth; // Largura do contêiner
+    const mouseX = event.clientX - event.currentTarget.offsetLeft;  // Calcular a posição do mouse
+    const mousePercent = (mouseX / containerWidth) * 100; // Calcular a porcentagem
+    const invertedPercent = 100 - mousePercent; // Calcular a porcentagem invertida
+    const opacidade = mousePercent / 100; // Calcular a opacidade
+    const opacidadeInvertida = invertedPercent / 100; // Calcular a opacidade invertida
+
+
+
 
     const paddingPercent = 40; // 15% de padding de cada lado
     const scale = 20; // Escala ajustada para 70% do container
@@ -30,10 +37,18 @@ function Slider2() {
     setClipPath(`${mousePercent}%`);
     setClipPath2(`${invertedPercent}%`);
     setPosition(`${invertedPercent2}%`);
+    setOpacidade(`${opacidade}`);
+    setOpacidadeInvertida(`${opacidadeInvertida}`);
   };
 
   return (
+    <>
+    <div className={styles.containerTexto}>
+      <p className={styles.textoMark} style={{opacity: `${opacidadeInvertida}`}}>marketing</p>
+      <p className={styles.textoDev} style={{opacity: `${opacidade}`}}>{"<"}código{">"}</p>
+    </div>
     <div className={styles.faceContainer} onMouseMove={handleMouseMove}>
+      {/* <p className={styles.textoMark}>Marketeiro</p> */}
       <img
         src="./vinicius_costa.png"
         className={styles.faceImage}
@@ -46,7 +61,9 @@ function Slider2() {
         style={{ clipPath: `inset(0 ${clipPath} 0 0)`, left: `${Position}` }}
         alt="Face"
       />
+      {/* <p className={styles.textoDev}>Desenvolvedor</p> */}
     </div>
+    </>
   );
 }
 
