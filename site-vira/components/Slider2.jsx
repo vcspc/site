@@ -14,26 +14,22 @@ function Slider2() {
     const mouseX = event.clientX - event.currentTarget.offsetLeft;  // Calcular a posição do mouse
     const mousePercent = (mouseX / containerWidth) * 100; // Calcular a porcentagem
     const invertedPercent = 100 - mousePercent; // Calcular a porcentagem invertida
-    const opacidade = mousePercent / 100; // Calcular a opacidade
-    const opacidadeInvertida = invertedPercent / 100; // Calcular a opacidade invertida
-
-
-
-
+    let opacidade = mousePercent / 100; // Calcular a opacidade
+    let opacidadeInvertida = invertedPercent / 100; // Calcular a opacidade invertida
     const paddingPercent = 40; // 15% de padding de cada lado
     const scale = 20; // Escala ajustada para 70% do container
-
-   /*  let mousePercent = ((mouseX / containerWidth) * scale) + paddingPercent;
-    mousePercent = Math.max(paddingPercent, Math.min(mousePercent, 100 - paddingPercent));
-    const invertedPercent = 100 - mousePercent;
-     */
+  
     // Calculando a porcentagem limitada ao intervalo de 40% a 60%
     let mousePercent2 = ((mouseX / containerWidth) * scale) + paddingPercent;
     mousePercent2 = Math.max(paddingPercent, Math.min(mousePercent, 100 - paddingPercent));
     const invertedPercent2 = 100 - mousePercent2; 
     
+    if (mousePercent > 45 && mousePercent < 55) {
+      opacidade = 1;
+      opacidadeInvertida = 1;
+    }
 
-    // Atualizar o estado dos clip-paths
+    // Atualizar o estado dos clip-paths e opacidade
     setClipPath(`${mousePercent}%`);
     setClipPath2(`${invertedPercent}%`);
     setPosition(`${invertedPercent2}%`);

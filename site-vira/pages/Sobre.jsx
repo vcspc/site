@@ -34,6 +34,16 @@ export default function Sobre() {
                     descricao="Eu sou o Victor Costa, formado em Publicidade e Propaganda pela UNASP em Engenheiro Coelho e fiz meu MBA em Marketing, Branding e Growth pela PUC-RS. Em 2019, tive a honra de estar na Short List de Jovens Talentos no Festival App Campinas. Já são 7 anos trabalhando com marketing digital, onde atuei em agências, portais de notícias e no grupo Martin Holandesa, em Holambra. Ao longo da minha carreira, me especializei em montar e liderar equipes de marketing, além de ajudar vários empreendedores com consultorias e estratégias digitais que realmente fazem a diferença"
                     sentido="direita"
                 />
+
+                <Apresentacao
+                    src="./sevice.svg"
+                    alt="Ilustração de um computador com abas do navegaodr abertas"
+                    titulo="Serviços"
+                    subtitulo="O que oferecemos"
+
+                
+                
+                />
                     
                 </section>
             </Layout>

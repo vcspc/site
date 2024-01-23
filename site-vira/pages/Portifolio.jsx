@@ -12,10 +12,10 @@ export default function Portifolio() {
                 <div className={styles.apresentacao}>
                     <Apresentacao
                         src="./logo_vira.svg" 
-                        alt="Imagem de Vinícius Costa"
+                        alt="Logo da empresa Vira"
                         titulo="portifólio."
-                        subtitulo="Desenvolvedor Web"
-                        descricao="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. afhjkhdfieiuh nasjkhkah nkjdhwepç badhiowkj uwedjdfkjnabe wnekjwheidjal njkwaeiuwoifjan jkweiwhfnkankje owewjfh whdkja wheuiwhouehkj naiwunajfniuaow jiwieuw u kjkjarkqwj"
+                        subtitulo="Confira alguns dos trabalhos de Marketing que participamos"
+                        descricao="Temos experiencia no desenvolvimento de sites, aplicativos, campanhas de Marketing com grandes empresas como Heineken, Restaurantes e Influenciadores Digitais. Buscamos sempre impulsionar nossos clientes"
                         sentido="direita"
                     />
                 </div>
