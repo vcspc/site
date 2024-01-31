@@ -21,13 +21,13 @@ export default function Portifolio() {
                 </div>
                 <div className={styles.portifolio}>
                     <Card 
-                    src="./bussola.png" 
+                    src="./bussola.PNG" 
                     alt="Imagem de um projeto de landing page chamado Bússola do Escritor" 
                     titulo="Landing page Bússola do Escritor" 
                     descricao="Landing page desenvolvida para o projeto Bússola do Escritor" 
                     />
                     <Card 
-                    src='./livro.png' 
+                    src='./livro.PNG' 
                     alt="Imagem de um projeto de landing page de promoção do livro Nós Estivemos Aqui" 
                     titulo="Landing page Nós Estivemos Aqui" 
                     descricao="Landing page desenvolvida para o projeto de promoção do livro Nós Estivemos Aqui" 

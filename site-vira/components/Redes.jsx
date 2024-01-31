@@ -11,7 +11,7 @@ export default function Redes() {
                 </div>
                 <div className={styles.container__redes__social}>
                     <Rede 
-                        src="./instagram.png" 
+                        src="./Instagram.png" 
                         alt="Logo do Instagram"
                         link="https://github.com/viniciuscosta"
                         texto="Instagram"
@@ -25,7 +25,7 @@ export default function Redes() {
                         cor="#107db7"
                     />
                     <Rede 
-                        src="./tiktok.svg" 
+                        src="./Tiktok.svg" 
                         alt="Logo do Tiktok"
                         link="https://www.instagram.com/viniciuscosta.dev/"
                         texto="Tiktok"
