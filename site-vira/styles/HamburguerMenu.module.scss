@@ -1,0 +1,68 @@
+@import 'variaveis';
+@import 'mixins';
+
+
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  // background-color: $cor-principal;
+}
+
+.hamburgerIcon {
+  background-image: url("/site-vira/public/hamburger_menu.svg");
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+  
+  cursor: pointer;
+  // Add additional styling for the button
+}
+
+.icon,
+.iconOpen {
+  // Define default styles for the icon lines
+  display: block;
+  height: 2px;
+  // background-color: $cor-secundaria;
+  color: $cor-principal;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.iconOpen {
+  // Define styles for the icon lines when the menu is open
+  transform: rotate(45deg); // Example transformation
+  // Add additional transformations and styles
+}
+
+.menu,
+.menuOpen {
+  // Define default styles for the menu
+  display: none;
+  // Add additional styling for the menu
+}
+
+.menuOpen {
+  // Define styles for the menu when it is open
+  background-color: $cor-principal;
+  color : $cor-secundaria;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  a {
+    @include texto-normal ($fonte-media, $cor-secundaria);
+    text-decoration: none;
+    margin: 1em 0 1em 0;
+  }
+
+  // Add additional styling for the menu when it's open
+}
+
+// Add responsive or specific styles as needed

@@ -22,6 +22,7 @@ function Layout({ children }) {
               </li>
             </ul>
           </nav>
+          {/* <Menu /> */}
         </div>
       </header>
 
