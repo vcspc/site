@@ -3,6 +3,8 @@
 
 
 .hamburgerMenu {
+  position: absolute;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,14 +14,20 @@
   // background-color: $cor-principal;
 }
 
-.hamburgerIcon {
-  background-image: url("/site-vira/public/hamburger_menu.svg");
-  background-size: cover;
-  width: 2em;
-  height: 2em;
+.hamburgerButon {
+  position: absolute;
+  width: 2.7em;
+  height: 3em;
+  right: 1em;
+  top: 0.7em;
+  background-color: $cor-principal;
+  
+  border: none; 
+  outline: none; 
+ 
   
   cursor: pointer;
-  // Add additional styling for the button
+  
 }
 
 .icon,
@@ -27,10 +35,13 @@
   // Define default styles for the icon lines
   display: block;
   height: 2px;
-  // background-color: $cor-secundaria;
+  background-image: url("/site-vira/public/hamburger_menu.svg");
+  background-size: cover;
   color: $cor-principal;
-  margin: 5px 0;
+  background-color: $cor-secundaria;
+  margin: 7px 0;
   transition: transform 0.3s ease;
+  transform: scale(1.3);
 }
 
 .iconOpen {
@@ -48,6 +59,9 @@
 
 .menuOpen {
   // Define styles for the menu when it is open
+  position: absolute;
+  top: 4em;
+  
   background-color: $cor-principal;
   color : $cor-secundaria;
   display: flex;
@@ -57,6 +71,7 @@
   width: 100%;
   
   a {
+    
     @include texto-normal ($fonte-media, $cor-secundaria);
     text-decoration: none;
     margin: 1em 0 1em 0;

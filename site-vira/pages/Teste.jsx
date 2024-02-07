@@ -7,7 +7,7 @@ export default function Teste() {
     return (
         <>
             <Layout>
-                <MenuHamburguer />
+                
             </Layout>
         </>
     )

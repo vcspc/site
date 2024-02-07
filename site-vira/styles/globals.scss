@@ -140,3 +140,60 @@
     }
 
 }
+
+@media (max-width: 412px) {
+    // Coloque aqui as adaptações de estilo para telas de até 412 pixels
+
+    .body {
+
+        header {
+
+            .container {
+                
+
+                img {
+
+                }
+                
+                .menu {
+
+                    display: none;
+
+                    .lista_menu {
+
+                        .item_menu {
+
+                            a {
+
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+
+        main {
+
+        }
+
+        footer {
+
+            .container {
+
+                .assinatura {
+
+                }
+
+                .contato {
+
+                    .item_contato {
+
+                        a {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

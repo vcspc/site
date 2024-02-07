@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MenuHamburguer from '../components/MenuHamburguer';
 
 function Layout({ children }) {
   return (
@@ -22,7 +23,7 @@ function Layout({ children }) {
               </li>
             </ul>
           </nav>
-          {/* <Menu /> */}
+          <MenuHamburguer />
         </div>
       </header>
 

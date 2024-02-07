@@ -10,7 +10,7 @@ const HamburgerMenu = () => {
 
     return (
         <div className={styles.hamburgerMenu}>
-            <button className={styles.hamburgerIcon} onClick={toggleMenu}>
+            <button className={styles.hamburgerButon} onClick={toggleMenu}>
                 
                 <span className={isOpen ? styles.iconOpen : styles.icon}></span>
                 <span className={isOpen ? styles.iconOpen : styles.icon}></span>
