@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import styles from '../styles/HamburguerMenu.module.scss'; // Assume the existence of CSS module
+import styles from '../styles/HamburguerMenu.module.scss';
+import Link from 'next/link';
 
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,10 @@ const HamburgerMenu = () => {
             </button>
             <div className={isOpen ? styles.menuOpen : styles.menu}>
                 {/* Place your menu items here */}
-                <a href="/">inicio</a>
-                <a href="/Sobre">sobre</a>
-                <a href="/Portifolio">portifólio</a>
-                <a href="/Contato">contato</a>
+                <Link href="/">inicio</Link>
+                <Link href="/Sobre">sobre</Link>
+                <Link href="/Portifolio">portifólio</Link>
+                <Link href="/Contato">contato</Link>
                 <a href="/Blog">blog</a>
             </div>
         </div>
