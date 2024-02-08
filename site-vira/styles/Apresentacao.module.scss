@@ -88,3 +88,57 @@
     
     }
 }
+
+@media (max-width: 412px) {
+
+    
+    
+    //ESTILIZAÇÃO DO COMPONENTE PARA A DIREITA
+    
+    .sobre__direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: 0 0 5rem 0;
+    
+        .sobre__texto__direita {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 90%;
+    
+            .sobre__texto__titulo__direita {
+                @include texto-destaque (3rem, $cor-texto);
+                margin: 0 0 1rem 0;
+            }
+    
+            .sobre__texto__subtitulo__direita {
+                @include texto-normal ($fonte-media, $cor-texto);
+                margin: 0 0 1rem 0;
+            }
+    
+            .sobre__texto__conteudo__direita {
+                @include texto-normal ($fonte-pequena, $cor-texto);
+                line-height: 30px;
+                text-align: start;
+            }
+        }
+    
+        .sobre__img__direita {
+            width: 90%;
+            margin: 2rem 0 0 0;
+    
+            img {
+                width: 100%;
+            }
+        
+        }
+    }
+
+
+
+
+}

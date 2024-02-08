@@ -18,10 +18,10 @@ const HamburgerMenu = () => {
             </button>
             <div className={isOpen ? styles.menuOpen : styles.menu}>
                 {/* Place your menu items here */}
-                <a href="/Index">inicio</a>
+                <a href="/">inicio</a>
                 <a href="/Sobre">sobre</a>
                 <a href="/Portifolio">portifólio</a>
-                <a href="Contato">contato</a>
+                <a href="/Contato">contato</a>
                 <a href="/Blog">blog</a>
             </div>
         </div>

@@ -177,14 +177,18 @@
         }
 
         footer {
+            justify-content: center;
 
             .container {
+                justify-content: center;
 
                 .assinatura {
+                    
 
                 }
 
                 .contato {
+                    display: none;
 
                     .item_contato {
 
@@ -195,5 +199,7 @@
                 }
             }
         }
+        
     }
 }
+
