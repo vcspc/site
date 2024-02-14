@@ -7,6 +7,10 @@
     width: 100%;
    /*  justify-content: center; */
     align-items: center;
+
+    .socios {
+        display: none;
+    }
 }
 
 .destaques {
@@ -58,24 +62,40 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        position: relative;
         margin-top: 1rem;
 
-        .marketing {
-            @include texto-destaque ($fonte-media, $cor-texto);
-            position: absolute;
-            left: 1rem;
+        .socios {
+            
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+
+            .marketing {
+            
+                @include texto-destaque ($fonte-media, $cor-texto);
+                position: absolute;
+                left: 1rem;
+                z-index: 2;
+            }
+    
+            img {
+                z-index: 1;
+                width: 20rem;
+            }
+    
+            .codigo {
+                @include texto-destaque ($fonte-media, $cor-texto);
+                position: absolute;
+                right: 1rem;
+                z-index: 2;
+            }
+
         }
 
-        img {
-            width: 20rem;
-        }
-
-        .codigo {
-            @include texto-destaque ($fonte-media, $cor-texto);
-            position: absolute;
-            right: 1rem;
-        }
+        
     }
     
     .destaques {

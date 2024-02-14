@@ -181,8 +181,12 @@
 
             .container {
                 justify-content: center;
+                align-self: center;
+                flex-direction: column;
 
                 .assinatura {
+                    align-self: center;
+                    justify-self: center;
                     
 
                 }
