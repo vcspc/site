@@ -9,6 +9,9 @@ export default function Home() {
       <Layout>
         <section className={styles.apresentacao}>
           <Slider2 />
+          <p className={styles.marketing}>marketing</p>
+          <img src="./juncao.svg" alt="Imagem dos socios unidas" />
+          <p className={styles.codigo}>{"<"}código{">"}</p>
         </section>
           <section className={styles.destaques}>
               <div className={styles.divisoria}>

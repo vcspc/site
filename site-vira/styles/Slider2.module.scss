@@ -56,3 +56,18 @@
     transition: clip-path 1s ease, left 3s ease;
     transform: translate(-48%, -50%)
   }
+
+
+@media (max-width: 412px) {
+
+    .containerTexto {
+      display: none;
+      
+      
+    }
+
+    .faceContainer {
+      display: none;
+    }
+
+}
