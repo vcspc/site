@@ -58,6 +58,7 @@ export default function Sobre() {
   const screenWidth = useScreenWidth();
   const sentidoEsquerdo = screenWidth > 412 ? 'esquerda' : 'direita';
   const sentidoDireito = screenWidth > 412 ? 'direita' : 'direita';
+  const sentidoLista = screenWidth > 412 ? 'lista' : 'listaDireita';
 
   return (
     <>
@@ -92,11 +93,20 @@ export default function Sobre() {
           />
 
           <Apresentacao
-              src="./sevice.svg"
+              src="./service.svg"
               alt="Ilustração de um computador com abas do navegaodr abertas"
               titulo="Serviços"
               subtitulo="O que oferecemos"
-              sentido={sentidoEsquerdo}
+              sentido={sentidoLista}
+              itens={[
+                "SEO",
+                "Marketing Digital",
+                "Campanhas de Publicidade",
+                "Gestão de Redes Sociais",
+                "Sites e Lojas Online",
+                "E-commerce",
+                "Desenvolvimento Web"
+              ]}
           />
               
         </section>
