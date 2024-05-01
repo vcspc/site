@@ -1,0 +1,22 @@
+@import 'variaveis';
+@import 'mixins';
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    width: 60%;
+
+    .titulo {
+        @include texto-normal (3rem, $cor-texto);
+        margin: 0 0 0.3em 0;
+    }
+    
+    .texto {
+        @include texto-normal ($fonte-media - 0.2rem, $cor-texto);
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+}
+
