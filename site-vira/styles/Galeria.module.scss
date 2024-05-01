@@ -1,0 +1,16 @@
+@import 'variaveis';
+@import 'mixins';
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* alinha as crianças no topo */
+    justify-content: space-between; /* alinha as crianças à esquerda, sem espaço entre elas */
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .galeria_imagem {
+        width: 33%;
+    }
+}
