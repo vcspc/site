@@ -14,7 +14,9 @@ export default function Teste() {
                     './vinicius_costa.png',
                     './victor_costa.png'
                 ]}
+                largura="20rem"
                 />
+                
             </Layout>
         </>
     )
