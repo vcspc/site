@@ -20,3 +20,18 @@
 
 }
 
+@media (max-width: 412px) {
+
+    .corpo {
+        width: 85%;
+
+        .titulo {
+           font-size: 2.5rem;
+        }
+
+        .texto {
+            font-size: $fonte-pequena;
+        }
+    }
+}
+
