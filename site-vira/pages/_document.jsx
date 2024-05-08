@@ -3,10 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 export default function Document() {
   return (
     <Html lang="pt-br">
-      <Head>
-        <title>Vira Negócios</title>
-        <link rel="shortcut icon" href="./logo_vira.svg" />
-      </Head>
+      <Head/>
       <body>
         {/* <header>
             <div className="container">
