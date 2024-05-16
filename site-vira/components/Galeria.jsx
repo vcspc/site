@@ -10,21 +10,25 @@ import 'swiper/scss/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import useScreenWidth from '../components/UseScreenWidth';
 
 
 export default function Galeria(props) {
-
+    let slides = props.slides;
+    const screenWidth = useScreenWidth();
+    const slidePerView = screenWidth > 412 ? slides : 1;
+    const navegation = screenWidth > 412 ? true : false;
 
     return (
         <>
             <Swiper
-                slidesPerView={1}
+                slidesPerView={slidePerView}
                 spaceBetween={30}
                 loop={true}
                 pagination={{
                 clickable: true,
                 }}
-                navigation={false}
+                navigation={navegation}
                 modules={[Pagination, Navigation]}
                 className={styles.swiper}
             >
@@ -41,7 +45,7 @@ export default function Galeria(props) {
             
                 
             </Swiper>
-            <div className={styles.galeria}>
+            {/* <div className={styles.galeria}>
                     {props.imagens.map((imagem, index) => (
                         <img 
                             
@@ -51,7 +55,7 @@ export default function Galeria(props) {
                             style={{width: props.largura || '20rem'}} 
                             className={styles.galeria_imagem}/>
                     ))}
-            </div>
+            </div> */}
         </>
    
     );
