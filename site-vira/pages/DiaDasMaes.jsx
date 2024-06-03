@@ -16,14 +16,11 @@ export default function Amistel() {
         <>
             <Layout>
                 <Apresentacao 
-                    src="./amstel_logo.svg" 
-                    alt="Logo da empresa Amistel"
-                    titulo="Snack Bar De Dam"
-                    subtitulo="Lançamento do De Dam Snack Bar"
-                    descricao="Desenvolvemos o planejamento de uma campanha de lançamento do primeiro Snack Bar de Holambra com o mesmo conceito dos snack bars de Amsterdam. Para o lançamento convidamos 20 influenciadores da região para um jantar de pré-lançamento do bar. 
-                    O convite foi enviado em uma caixa com presentes exclusivos com a temática holandesa do De Dam.
-                    Foi sorteado também um press kit (o mesmo dos influencers) e um convite do pré-lançamento para os seguidores dos influencers parceiros.
-                    Foram mais de 600 stories e postagens feitos pelos influencers e um alcance de mais de 70.000 pessoas em Holambra e região. "
+                    src="./maes.svg" 
+                    alt="Ilustração de uma mãe segurando um bebe no colo"
+                    titulo="Dia das Mães"
+                    subtitulo="Campanha de Dia das Mães"
+                    descricao="Com o objetivo de aproximação com o público femenino, nesta campanha para a Martin Holandesa, foi criado um vídeo com diferentes tipos de mães, no qual, foi levantado alguns questionamentos sobre a  tarefa de ser mãe hoje em dia."
                     sentido={sentidoDireito}
                 />
                 <GaleriaVideo 

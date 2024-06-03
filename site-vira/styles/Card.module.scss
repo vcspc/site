@@ -1,6 +1,10 @@
 @import 'variaveis';
 @import 'mixins';
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
 .card {
     @include card (20rem);
    
