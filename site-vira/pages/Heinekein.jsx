@@ -17,11 +17,11 @@ export default function Heinekein() {
         <>
             <Layout>
                 <Apresentacao 
-                    src="./vinicius_costa.png" 
+                    src="./logo_heineken.jpg" 
                     alt="Logo da empresa de marketing Vira"
                     titulo="Estação Heinekein"
-                    subtitulo="Através da parceria de Heinekein e Martin  Holandesa..."
-                    descricao="Na Vira Marketing Digital, nós acreditamos no poder da tecnologia para transformar o cenário empresarial. Nosso nome, que significa 'mudar', 'transformar' ou 'inverter' em português, reflete nossa essência e missão: virar o jogo a favor de nossos clientes. Somos especialistas em criar estratégias de marketing digital inovadoras que não apenas captam a atenção do público, mas também convertem essa atenção em vendas, lucros e crescimento sustentável."
+                    subtitulo="Lançamento de uma Estação de Coleta de Long Neck Heineken"
+                    descricao="Em colaboração com a Heineken e a Martin Holandesa, contribuímos para o lançamento e aquisição de clientes ao estabelecer uma Estação de Coleta de Garrafas Long Neck Heineken. A estação visava incentivar a comunidade de Holambra e arredores a reciclar garrafas de vidro Long Neck Heineken. Os consumidores recebiam uma garrafa Long Neck Heineken adicional ao depositar 12 garrafas na estação e consumir um valor mínimo de R$ 50,00 no restaurante."
                     sentido={sentidoDireito}
                 />
                 <Galeria 
@@ -35,10 +35,7 @@ export default function Heinekein() {
                     
                     largura="10rem"
                 />
-                <Corpo 
-                    titulo="Victor Costa"
-                    texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                />
+                
             </Layout>
         </>
     )

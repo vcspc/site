@@ -38,7 +38,7 @@ export default function Galeria(props) {
                             src={imagem} 
                             alt={`Imagem ${index+1}`} 
                             className={styles.swiper_imagem}
-                           /*  style={{width: props.largura || '20rem'}}  */
+                            style={{width: props.largura || '20rem'}}
                         />
                     </SwiperSlide>
                 ))}
