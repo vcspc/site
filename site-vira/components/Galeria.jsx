@@ -25,6 +25,7 @@ export default function Galeria(props) {
                 slidesPerView={slidePerView}
                 spaceBetween={30}
                 loop={true}
+                centeredSlides={true}
                 pagination={{
                 clickable: true,
                 }}

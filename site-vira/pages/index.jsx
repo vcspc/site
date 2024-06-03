@@ -23,25 +23,25 @@ export default function Home() {
               </div>
               <div className={styles.cards} >
                 <Card 
-                  src="./bussola.PNG" 
-                  alt="Imagem de um projeto de landing page chamado Bússola do Escritor" 
-                  titulo="Landing page Bússola do Escritor" 
-                  descricao="Landing page desenvolvida para o projeto Bússola do Escritor"
-                  link="https://curso.autorpedrochester.com.br" 
-                  />
+                    src='./logo_heineken.png'
+                    alt='Imagem do logo da marca Heineken' 
+                    titulo="Projeto com a Heineken" 
+                    descricao="Lançamento de uma estação de coleta de long neck Heineken"
+                    link="/Heinekein" 
+                />
                 <Card 
-                  src='./livro.PNG' 
-                  alt="Imagem de um projeto de landing page de promoção do livro Nós Estivemos Aqui" 
-                  titulo="Landing page Nós Estivemos Aqui" 
-                  descricao="Landing page desenvolvida para o projeto de promoção do livro Nós Estivemos Aqui" 
-                  link="https://nosestivemosaqui.autorpedrochester.com.br/"
-                  />
+                    src='./amstel_logo.jpg' 
+                    alt="Imagem da marca Amstel" 
+                    titulo="Projeto com a Amstel" 
+                    descricao="Lançamento do De Dam - Snack Bar em Holambra" 
+                    link="/Amstel" 
+                />
                 <Card 
-                  src='./oliveage.png'
-                  alt='Imagem do projeto de landing page da marca Oliveage' 
-                  titulo="Landing page da marca Oliveage" 
-                  descricao="Landing page desenvolvida para o projeto da marca Olivage"
-                  link="https://oliveage.com.br"
+                    src='./logo_martin_holandesa.png'
+                    alt='Imagem do logo da empresa Martin Holandesa' 
+                    titulo="Campanha de 67 anos da Martin Holandesa" 
+                    descricao="Criação da campanha de 67 anos da Martin Holandesa"
+                    link="/TresCoracoes" 
                 />
                   
               </div>

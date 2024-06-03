@@ -25,6 +25,7 @@ export default function GaleriaVideo(props) {
                 slidesPerView={slidePerView}
                 spaceBetween={30}
                 loop={true}
+                centeredSlides={false}
                 pagination={{
                 clickable: true,
                 }}

@@ -33,7 +33,7 @@ export default function Heinekein() {
                     
                     slides={2}
                     
-                    largura="10rem"
+                    largura="25rem"
                 />
                 
             </Layout>
