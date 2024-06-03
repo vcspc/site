@@ -26,19 +26,22 @@ export default function Home() {
                   src="./bussola.PNG" 
                   alt="Imagem de um projeto de landing page chamado Bússola do Escritor" 
                   titulo="Landing page Bússola do Escritor" 
-                  descricao="Landing page desenvolvida para o projeto Bússola do Escritor" 
+                  descricao="Landing page desenvolvida para o projeto Bússola do Escritor"
+                  link="https://curso.autorpedrochester.com.br" 
                   />
                 <Card 
                   src='./livro.PNG' 
                   alt="Imagem de um projeto de landing page de promoção do livro Nós Estivemos Aqui" 
                   titulo="Landing page Nós Estivemos Aqui" 
                   descricao="Landing page desenvolvida para o projeto de promoção do livro Nós Estivemos Aqui" 
+                  link="https://nosestivemosaqui.autorpedrochester.com.br/"
                   />
                 <Card 
                   src='./oliveage.png'
                   alt='Imagem do projeto de landing page da marca Oliveage' 
                   titulo="Landing page da marca Oliveage" 
                   descricao="Landing page desenvolvida para o projeto da marca Olivage"
+                  link="https://oliveage.com.br"
                 />
                   
               </div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Card(props){
     return(
-        <Link href="#">
+        <Link href={props.link}>
             <div className={styles.card} >
                 <img className={styles.card_img} src={props.src} alt={props.alt}/>
                 <h2 className={styles.card_titulo} >{props.titulo}</h2>
