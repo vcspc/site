@@ -6,6 +6,10 @@ import Apresentacao from '@/components/Apresentacao';
 import Link from 'next/link';
 
 export default function Home() {
+
+  const nVira = "<strong>Vira</strong>" 
+  const r2 = 4
+
   return (
     <>
       <Layout>
@@ -64,8 +68,14 @@ export default function Home() {
           />
 
           <Apresentacao 
-            texto1="Na Vira Negócios, não prometemos milagres, entregamos resultados. Nosso nome não é à toa: viramos o jogo a favor dos nossos clientes, transformando suas estratégias digitais em verdadeiras máquinas de crescimento."
-            texto2="Dominamos as ferramentas mais avançadas e as tendências mais recentes, mas nosso maior diferencial é a paixão por entender a fundo o seu negócio e seus objetivos."
+            texto1A="Na "
+            negritoA="Vira Negócios"
+            texto1B=", não prometemos milagres, "
+            negritoB="entregamos resultados"
+            texto1C=". Nosso nome não é à toa: viramos o jogo a favor dos nossos clientes, transformando suas estratégias digitais em verdadeiras máquinas de crescimento."
+            texto2A="Dominamos as ferramentas mais avançadas e as tendências mais recentes, mas nosso "
+            negrito2="maior diferencial "
+            texto2B="é a paixão por entender a fundo o seu negócio e seus objetivos."
             src="./laptop.svg"
             alt="Imagem de um laptop com uma seta ascendente saindo da tela do laptop"
             sentido="imagemCentro"

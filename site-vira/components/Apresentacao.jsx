@@ -95,9 +95,9 @@ export default function Apresentacao(props) {
     if (props.sentido === "imagemCentro") {
         return (
             <div className={styles.imagem__centro}>
-                <p className={styles.imagem__centro__texto}>{props.texto1}</p>
+                <p className={styles.imagem__centro__texto}>{props.texto1A}<strong>{props.negritoA}</strong>{props.texto1B}<strong>{props.negritoB}</strong>{props.texto1C}</p>
                 <img className={styles.imagem__centro__imagem} src={props.src} alt={props.alt} />
-                <p className={styles.imagem__centro__texto}>{props.texto2}</p>
+                <p className={styles.imagem__centro__texto}>{props.texto2A}<strong>{props.negrito2}</strong>{props.texto2B}</p>
             </div>
         )
 
@@ -129,6 +129,6 @@ export default function Apresentacao(props) {
 
     }
 
-    
+
 
 }
