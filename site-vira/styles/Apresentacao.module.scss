@@ -102,6 +102,116 @@
     }
 }
 
+.destaque {
+
+    @include container (80%, row);
+    margin: 15rem 0 5rem 0;
+
+    .destaque__texto{
+        @include texto-destaque (3rem, $cor-texto);
+    }
+
+    .destaque__imagem {
+
+    }
+}
+
+.imagem__centro {
+
+    @include container (80%, row);
+    margin: 5rem 0 4rem 0;
+    justify-content: space-between;
+
+    .imagem__centro__texto {
+        @include texto-normal ($fonte-media - 0.5rem, $cor-texto);
+        line-height: 30px;
+        text-align: center;
+        width: 30%;
+    }
+
+    .imagem__centro__imagem {
+
+    }
+}
+
+.imagem__abaixo {
+
+    @include container (80%, column);
+    margin: 4rem 0 4rem 0;
+    justify-content: space-between;
+    height: 45rem;
+
+    .imagem__abaixo__texto {
+        @include texto-destaque (3rem, $cor-texto);
+        width: 80%;
+        text-align: center;
+    }
+
+    .imagem__abaixo__imagem {
+        width: 25rem;
+        
+    }
+
+}
+
+.textoImagemBotao {
+
+    @include container (80%, column);
+    height: 25rem;
+    justify-content: space-between;
+    margin: 6rem 0 5rem 0;
+
+
+    .textoImagemBotao__imagemTexto {
+
+        @include container (100%, row);
+
+
+        .textoImagemBotao__textos {
+
+            @include container (40%, column);
+            text-align: center;
+
+
+            .textoImagemBotao__texto1 {
+
+                @include texto-normal ($fonte-pequena + 0.2rem, $cor-texto);
+
+            }
+
+            .textoImagemBotao__texto2 {
+
+                @include texto-destaque ($fonte-media, $cor-texto);
+                text-transform: uppercase;
+
+
+            }
+        }
+
+        .textoImagemBotao__imagem {
+
+
+        }
+    }
+
+    .textoImagemBotao__botao {
+
+        border-radius: 5px;
+        background-color: $cor-butao;
+        color: $cor-secundaria;
+        border: none;
+        cursor: pointer;
+        width: 13rem;
+        height: 4rem;
+        font-size: 1.2rem;
+
+        &:hover {
+            background-color: $cor-hover;
+        }
+    }
+
+}
+
 @media (max-width: 412px) {
 
     .sobre {

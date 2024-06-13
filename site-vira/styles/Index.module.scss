@@ -43,13 +43,36 @@
         }
     }
 
-    .cards {
+    .projetos {
+
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 65em;
-        margin: 1em 0 3rem 0;
+        flex-direction: column;
+        
+
+        .vejamais {
+            @include texto-normal ($fonte-pequena, $cor-texto);
+            cursor: pointer;
+            align-self: end;
+
+
+            &:hover {
+                color: $cor-texto-destaques;
+            }
+
+        
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 65em;
+            margin: 1em 0 3rem 0;
+
+            
+        }
+    
     }
 
 }

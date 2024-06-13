@@ -82,4 +82,53 @@ export default function Apresentacao(props) {
     
     }
 
+    if (props.sentido === "destaqueImagem") {
+        return (
+            <div className={styles.destaque}>
+                <h2 className={styles.destaque__texto}>{props.texto}</h2>
+                <img className={styles.destaque__imagem} src={props.src} alt={props.alt} />
+            </div>
+
+        )
+    }
+
+    if (props.sentido === "imagemCentro") {
+        return (
+            <div className={styles.imagem__centro}>
+                <p className={styles.imagem__centro__texto}>{props.texto1}</p>
+                <img className={styles.imagem__centro__imagem} src={props.src} alt={props.alt} />
+                <p className={styles.imagem__centro__texto}>{props.texto2}</p>
+            </div>
+        )
+
+    }
+
+    if (props.sentido === "imagemAbaixo") {
+        return (
+            <div className={styles.imagem__abaixo}>
+                <h2 className={styles.imagem__abaixo__texto}>{props.texto}</h2>
+                <img className={styles.imagem__abaixo__imagem} src={props.src} alt={props.alt} />
+            </div>
+        )
+
+    }
+
+    if (props.sentido === "textoImagemBotao") {
+        return (
+            <div className={styles.textoImagemBotao}>
+                <div className={styles.textoImagemBotao__imagemTexto}>
+                    <div className={styles.textoImagemBotao__textos}>
+                        <p className={styles.textoImagemBotao__texto1}>{props.texto1}</p>
+                        <p className={styles.textoImagemBotao__texto2}>{props.texto2}</p>
+                    </div>
+                    <img className={styles.textoImagemBotao__imagem} src={props.src} alt={props.alt} />
+                </div>
+                <button className={styles.textoImagemBotao__botao}>{props.botao}</button>
+            </div>
+        )
+
+    }
+
+    
+
 }

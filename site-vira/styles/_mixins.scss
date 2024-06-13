@@ -22,3 +22,11 @@
 
    
 }
+
+@mixin container ($tamanho, $direcao) {
+    display: flex;
+    flex-direction: $direcao;
+    align-items: center;
+    justify-content: center;
+    width: $tamanho;
+}
