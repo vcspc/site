@@ -105,7 +105,7 @@
 .destaque {
 
     @include container (80%, row);
-    margin: 15rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
 
     .destaque__texto{
         @include texto-destaque (3rem, $cor-texto);
@@ -161,19 +161,20 @@
 .textoImagemBotao {
 
     @include container (80%, column);
-    height: 25rem;
+    height: 22rem;
     justify-content: space-between;
     margin: 6rem 0 5rem 0;
 
 
     .textoImagemBotao__imagemTexto {
 
-        @include container (100%, row);
+        @include container (75%, row);
+        justify-content: space-between;
 
 
         .textoImagemBotao__textos {
 
-            @include container (40%, column);
+            @include container (50%, column);
             text-align: center;
 
 
@@ -194,6 +195,7 @@
 
         .textoImagemBotao__imagem {
 
+            width: 40%;
 
         }
     }
