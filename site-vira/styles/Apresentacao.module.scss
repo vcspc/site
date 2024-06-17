@@ -331,11 +331,13 @@
     
         .destaque__texto{
             @include texto-destaque (1.2rem, $cor-texto);
+	    text-align: center;
         }
     
         .destaque__imagem {
-            width: 10rem;
-            align-self: end;
+            width: 12rem;
+            align-self: center;
+	    margin-top: 1.5rem;
         }
     }
     
@@ -366,10 +368,10 @@
         @include container (80%, column);
         margin: 4rem 0 4rem 0;
         justify-content: space-between;
-        height: 30rem;
+        height: 27rem;
     
         .imagem__abaixo__texto {
-            @include texto-destaque (1.5rem, $cor-texto);
+            @include texto-destaque (1.3rem, $cor-texto);
             width: 80%;
             text-align: center;
         }
@@ -384,9 +386,9 @@
     .textoImagemBotao {
     
         @include container (90%, column);
-        height: 25rem;
+        height: 23rem;
         justify-content: space-between;
-        margin: 6rem 0 5rem 0;
+        margin: 5rem 0 5rem 0;
     
     
         .textoImagemBotao__imagemTexto {
@@ -419,6 +421,7 @@
             .textoImagemBotao__imagem {
     
                 width: 70%;
+		margin-top: 2rem;
     
             }
         }
