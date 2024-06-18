@@ -16,7 +16,7 @@ export default function Amistel() {
         <>
             <Layout>
                 <Apresentacao 
-                    src="./amstel_logo.svg" 
+                    src="./logo_dedam.png" 
                     alt="Logo da empresa Amistel"
                     titulo="Snack Bar De Dam"
                     subtitulo="Lançamento do De Dam Snack Bar"

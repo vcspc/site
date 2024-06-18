@@ -42,26 +42,20 @@ export default function Portifolio() {
                     link="https://oliveage.com.br/" 
                     />
                     <Card 
-                    src='./logo_heineken.png'
-                    alt='Imagem do logo da marca Heineken' 
+                    src='./heinekein_capa.png'
+                    alt='Imagem de capa' 
                     titulo="Projeto com a Heineken" 
                     descricao="Lançamento de uma estação de coleta de long neck Heineken"
                     link="/Heinekein" 
                     />
                     <Card 
-                    src='./amstel_logo.jpg' 
+                    src='./snack_bar_dedam.png' 
                     alt="Imagem da marca Amstel" 
                     titulo="Projeto com a Amstel" 
                     descricao="Lançamento do De Dam - Snack Bar em Holambra" 
                     link="/Amstel" 
                     />
-                    <Card 
-                    src="./influenciadores.png" 
-                    alt="Imagem com vários influenciadores digitais" 
-                    titulo="Projetos com Influenciadores Digitais" 
-                    descricao="Trabalhos desenvolvidos com diferentes influenciadores no Instagram" 
-                    link="#" 
-                    />
+                    
                     <Card 
                     src="./clube_de_vantagens.png" 
                     alt="Imagem de apresentação de um clube de vantagens" 

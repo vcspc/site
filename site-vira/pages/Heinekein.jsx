@@ -17,11 +17,11 @@ export default function Heinekein() {
         <>
             <Layout>
                 <Apresentacao 
-                    src="./logo_heineken.jpg" 
+                    src="./heinekein.png" 
                     alt="Logo da empresa de marketing Vira"
                     titulo="Estação Heinekein"
                     subtitulo="Lançamento de uma Estação de Coleta de Long Neck Heineken"
-                    descricao="Em colaboração com a Heineken e a Martin Holandesa, contribuímos para o lançamento e aquisição de clientes ao estabelecer uma Estação de Coleta de Garrafas Long Neck Heineken. A estação visava incentivar a comunidade de Holambra e arredores a reciclar garrafas de vidro Long Neck Heineken. Os consumidores recebiam uma garrafa Long Neck Heineken adicional ao depositar 12 garrafas na estação e consumir um valor mínimo de R$ 50,00 no restaurante."
+                    descricao="Orquestramos o lançamento do De Dam em parceria com a Amstel, o primeiro Snack Bar de Holambra inspirado na vibrante cena de Amsterdam.Para apresentar essa experiência única, convidamos 20 influenciadores da região para um exclusivo jantar de pré-lançamento, embalado em uma caixa de presentes com a temática holandesa do bar."
                     sentido={sentidoDireito}
                 />
                 <Galeria 
@@ -34,6 +34,10 @@ export default function Heinekein() {
                     slides={2}
                     
                     largura="25rem"
+                />
+
+                <Corpo
+                    texto="A campanha se estendeu aos seguidores dos influenciadores, com um sorteio de um kit exclusivo e um convite para o pré-lançamento. O resultado? Mais de 600 stories e posts, alcançando mais de 70 mil pessoas em Holambra e região, gerando um burburinho irresistível em torno do De Dam."
                 />
                 
             </Layout>
