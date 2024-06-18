@@ -1,4 +1,5 @@
 import styles from '../styles/Apresentacao.module.scss';
+import Link from 'next/link';
 
 export default function Apresentacao(props) {
     
@@ -123,7 +124,9 @@ export default function Apresentacao(props) {
                     </div>
                     <img className={styles.textoImagemBotao__imagem} src={props.src} alt={props.alt} />
                 </div>
-                <button className={styles.textoImagemBotao__botao}>{props.botao}</button>
+                <Link href={props.link}>
+                <button  className={styles.textoImagemBotao__botao}>{props.botao}</button>
+                </Link>
             </div>
         )
 

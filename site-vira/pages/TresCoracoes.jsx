@@ -17,8 +17,8 @@ export default function Amistel() {
         <>
             <Layout>
                 <Apresentacao 
-                    src="./cafe_3_coracoes_logo.svg" 
-                    alt="Logo da empresa 3 Coracões"
+                    src="./foto_aniverssario.png" 
+                    alt="Logo da empresa Martin Holandesa"
                     titulo="Aniversário de 67 anos Martin Holandesa"
                     subtitulo="Em parceria com a 3 Corações"
                     descricao="Em Parceria com a 3 Corações Criamos uma campanha de 67 anos da Martin Holandesa. A ação tinha o objetivo de lembrar o público da tradição e autoridade que a marca tem como confeitaria em Holambra.

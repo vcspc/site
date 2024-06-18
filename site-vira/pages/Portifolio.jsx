@@ -64,14 +64,14 @@ export default function Portifolio() {
                     link="/ClubeDeVantagens" 
                     />
                     <Card 
-                    src='./logo_martin_holandesa.png'
-                    alt='Imagem do logo da empresa Martin Holandesa' 
-                    titulo="Campanha de 67 anos da Martin Holandesa" 
-                    descricao="Criação da campanha de 67 anos da Martin Holandesa"
+                    src='./capa_aniverssario.png'
+                    alt='Capa do card com a foto de 3 mulheres tirando foto em frente a Martin Holandesa' 
+                    titulo="Aniversário de 67 anos Martin Holandesa" 
+                    descricao="Em parceria com a 3 Corações"
                     link="/TresCoracoes" 
                     />
                     <Card 
-                    src="./dia_das_maes.png" 
+                    src="./capa_maes.png" 
                     alt="Imagem de mãe e filha se abraçando" 
                     titulo="Campanha do Dia das Mães" 
                     descricao="Campanha do dia das mães para aproximar o público femenino" 

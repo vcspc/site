@@ -1,6 +1,7 @@
 import styles from '../styles/Sobre.module.scss';
 import Apresentacao from '../components/Apresentacao';
 import Layout from '../components/Layout';
+import Corpo from '../components/Corpo';
 
 // export default function Sobre() {
 //     return (
@@ -60,6 +61,8 @@ export default function Sobre() {
   const sentidoDireito = screenWidth > 412 ? 'direita' : 'direita';
   const sentidoLista = screenWidth > 412 ? 'lista' : 'listaDireita';
 
+  
+
   return (
     <>
       <Layout>
@@ -70,16 +73,18 @@ export default function Sobre() {
               alt="Logo da empresa de marketing Vira"
               titulo="Vira"
               subtitulo="A empresa"
-              descricao="Na Vira Marketing Digital, nós acreditamos no poder da tecnologia para transformar o cenário empresarial. Nosso nome, que significa 'mudar', 'transformar' ou 'inverter' em português, reflete nossa essência e missão: virar o jogo a favor de nossos clientes. Somos especialistas em criar estratégias de marketing digital inovadoras que não apenas captam a atenção do público, mas também convertem essa atenção em vendas, lucros e crescimento sustentável."
+              descricao='Acreditamos no poder transformador da tecnologia e a utilizamos para impulsionar resultados reais para nossos clientes. Nosso nome, "Vira", reflete nossa missão: virar o jogo a seu favor, invertendo a lógica do mercado e transformando desafios em oportunidades. Somos especialistas em estratégias de marketing digital que vão além de likes e visualizações. Nosso foco é gerar resultados tangíveis: aumento de vendas, maximização de lucros e crescimento sustentável para o seu negócio. Com a Vira Marketing Digital, você não está apenas investindo em marketing, está investindo no futuro da sua empresa.'
               sentido={sentidoDireito}
           />
+
+          
 
           <Apresentacao 
               src="./victor_costa_completo.png" 
               alt="Imagem do sococio fundador Victor Costa"
               titulo="Victor Costa"
-              subtitulo="Gerente de Marketing"
-              descricao="Eu sou o Victor Costa, formado em Publicidade e Propaganda pela UNASP em Engenheiro Coelho e fiz meu MBA em Marketing, Branding e Growth pela PUC-RS. Em 2019, tive a honra de estar na Short List de Jovens Talentos no Festival App Campinas. Já são 7 anos trabalhando com marketing digital, onde atuei em agências, portais de notícias e no grupo Martin Holandesa, em Holambra. Ao longo da minha carreira, me especializei em montar e liderar equipes de marketing, além de ajudar vários empreendedores com consultorias e estratégias digitais que realmente fazem a diferença"
+              subtitulo="Estrategista de Marketing"
+              descricao="Olá, me chamo Victor Costa, sou formado em Publicidade e Propaganda pelo UNASP-EC com MBA em MARKETING, BRANDING E GROWTH pela PUC-RS. Tenho experiência em agências, portais de notícias e grandes empresas como o grupo de restaurantes Martin Holandesa. Minha paixão é construir e liderar equipes de alta performance, transformando estratégias digitais em resultados reais para negócios de todos os portes. Ao longo de 8 anos de carreira, fui reconhecido como um dos Jovens Talentos no Festival App Campinas e ajudei diversos empreendedores a alcançar seus objetivos através de consultorias personalizadas e soluções inovadoras."
               sentido={sentidoEsquerdo}
           />
 

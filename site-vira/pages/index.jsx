@@ -94,6 +94,7 @@ export default function Home() {
             src="./logo_vira.png"
             alt="Logotipo da empresa Vira Negócios"
             botao="AGENDE AQUI"
+            link="https://wa.me/5511977676130"
             sentido="textoImagemBotao"
           />
 
