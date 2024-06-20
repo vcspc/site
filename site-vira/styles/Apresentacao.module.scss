@@ -218,6 +218,56 @@
 
 }
 
+.lista {
+
+    @include container (80%, row);
+    margin: 5rem 0 5rem 0;
+    justify-content: start;
+    align-items: center;
+
+
+    .lista__img {
+        
+        display: none;
+
+        img {
+            width: 10rem;
+            height: auto;
+        }
+       
+    }
+
+    .lista__texto {
+
+        @include container (60%, column);
+        align-items: start;
+
+        .lista__texto__titulo {
+            @include texto-destaque ($fonte-grande, $cor-texto);
+            margin: 0 0 1rem 0;
+            font-weight: 300;
+        }
+
+        .lista__texto__itens {
+
+            @include container (100%, column);
+            align-items: start;
+            @include texto-normal ($fonte-pequena, $cor-texto);
+
+            .item {
+
+                margin: 0.3rem 0 0.3rem 0;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES
+
 @media (max-width: 412px) {
 
     .sobre {

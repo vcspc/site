@@ -98,6 +98,24 @@ export default function Home() {
             sentido="textoImagemBotao"
           />
 
+          <Apresentacao 
+            src="./service.svg"
+            alt="Ilustração de um computador com abas do navegaodr abertas"
+            titulo="Nossos Serviços"
+            subtitulo="O que oferecemos"
+            sentido="listaDireita2"
+            itens={[
+              {item: "SEO", descricao: "Otimização de sites e conteúdo para melhor ranqueamento nos resultados de pesquisa orgânica, aumentando a visibilidade online da sua empresa."},
+              {item: "Marketing Digital", descricao: "Conjunto de estratégias online para atrair, converter e fidelizar clientes, utilizando canais como SEO, mídias sociais, email marketing, etc."},
+              {item: "Campanhas de Publicidade", descricao: "Criação e gerenciamento de anúncios pagos em plataformas como Google Ads, Facebook Ads, Instagram Ads, etc., para alcançar um público específico e gerar resultados."},
+              {item: "Gestão de Redes Sociais", descricao: "Criação e gerenciamento de perfis em redes sociais como Facebook, Instagram, Twitter, etc., para construir relacionamento com o público, divulgar sua marca e gerar leads."},
+              {item: "Sites e Lojas Online", descricao: "Criação, desenvolvimento e manutenção de sites e lojas virtuais personalizados para sua empresa, otimizados para conversão e experiência do usuário."},
+              {item: "E-commerce", descricao: "Implementação e gestão de plataformas de e-commerce para venda de produtos ou serviços online, com foco em segurança, logística e atendimento ao cliente."},
+              {item: "Desenvolvimento Web", descricao: "Criação de websites e aplicações web sob medida para as necessidades da sua empresa, utilizando tecnologias modernas e design responsivo."}
+            ]}
+          
+          />
+
 
         </section>
 

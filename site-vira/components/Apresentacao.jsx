@@ -83,6 +83,28 @@ export default function Apresentacao(props) {
     
     }
 
+    if (props.sentido === "listaDireita2") {
+
+        return (
+            <div className={styles.lista}>
+                <div className={styles.lista__img}>
+                    <img src={props.src} alt={props.alt}/>
+                </div> 
+                <div className={styles.lista__texto}>
+                    <h2 className={styles.lista__texto__titulo}>{props.titulo}</h2>
+                    <ul className={styles.lista__texto__itens}>
+                        {props.itens.map((item) => (
+                            <li key={item.item} className={styles.item}><strong>{item.item}</strong>: {item.descricao}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+
+        )  
+    
+    
+    }
+
     if (props.sentido === "destaqueImagem") {
         return (
             <div className={styles.destaque}>
@@ -124,7 +146,7 @@ export default function Apresentacao(props) {
                     </div>
                     <img className={styles.textoImagemBotao__imagem} src={props.src} alt={props.alt} />
                 </div>
-                <Link href={props.link}>
+                <Link href={props.link}>    
                 <button  className={styles.textoImagemBotao__botao}>{props.botao}</button>
                 </Link>
             </div>
