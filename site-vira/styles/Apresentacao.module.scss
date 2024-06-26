@@ -220,10 +220,12 @@
 
 .lista {
 
-    @include container (80%, row);
+    @include container (100%, row);
     margin: 5rem 0 5rem 0;
-    justify-content: start;
+    padding: 2rem 0 2rem 0;
+    justify-content: center;
     align-items: center;
+    background-color: #fdbc15;
 
 
     .lista__img {
@@ -258,8 +260,12 @@
 
                 margin: 0.3rem 0 0.3rem 0;
 
+                .item__img {
+                    width: 1rem;
+                }
+
                 strong {
-                    font-weight: 600;
+                    font-weight: 700;
                 }
             }
         }
@@ -438,7 +444,7 @@
         @include container (90%, column);
         height: 23rem;
         justify-content: space-between;
-        margin: 5rem 0 5rem 0;
+        margin: 3rem 0 2rem 0;
     
     
         .textoImagemBotao__imagemTexto {
@@ -493,6 +499,61 @@
         }
     
     }
+
+    .lista {
+
+        @include container (100%, row);
+        margin: 1rem 0 1rem 0;
+        padding: 2rem 0 2rem 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #fdbc15;
+    
+    
+        .lista__img {
+            
+            display: none;
+    
+            img {
+                width: 10rem;
+                height: auto;
+            }
+           
+        }
+    
+        .lista__texto {
+    
+            @include container (80%, column);
+            align-items: start;
+    
+            .lista__texto__titulo {
+                @include texto-destaque ($fonte-grande, $cor-texto);
+                margin: 0 0 1rem 0;
+                font-weight: 300;
+            }
+    
+            .lista__texto__itens {
+    
+                @include container (100%, column);
+                align-items: start;
+                @include texto-normal ($fonte-pequena, $cor-texto);
+    
+                .item {
+    
+                    margin: 0.3rem 0 0.3rem 0;
+    
+                    .item__img {
+                        width: 1rem;
+                    }
+    
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
     
 
 

@@ -11,7 +11,7 @@ export default function Portifolio() {
             <Layout>
                 <div className={styles.apresentacao}>
                     <Apresentacao
-                        src="./logo_vira.svg" 
+                        src="./logo_vira 2.svg" 
                         alt="Logo da empresa Vira"
                         titulo="portifólio."
                         subtitulo="Confira alguns dos trabalhos de Marketing que participamos"

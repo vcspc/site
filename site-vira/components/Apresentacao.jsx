@@ -94,7 +94,10 @@ export default function Apresentacao(props) {
                     <h2 className={styles.lista__texto__titulo}>{props.titulo}</h2>
                     <ul className={styles.lista__texto__itens}>
                         {props.itens.map((item) => (
-                            <li key={item.item} className={styles.item}><strong>{item.item}</strong>: {item.descricao}</li>
+                            <li key={item.item} className={styles.item}>
+                                {/* <img className={styles.item__img} src={item.img} alt={item.alt}/> */}
+                                <strong>{item.item}</strong>: {item.descricao}
+                            </li>
                         ))}
                     </ul>
                 </div>

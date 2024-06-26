@@ -33,24 +33,24 @@ export default function Home() {
 
                 <div className={styles.cards} >
                   <Card 
-                      src='./logo_heineken.png'
-                      alt='Imagem do logo da marca Heineken' 
+                      src='./heinekein_capa.png'
+                      alt='Imagem de capa com comemoração da estação de coleta de long neck Heineken' 
                       titulo="Projeto com a Heineken" 
                       descricao="Lançamento de uma estação de coleta de long neck Heineken"
                       link="/Heinekein" 
                   />
                   <Card 
-                      src='./amstel_logo.jpg' 
-                      alt="Imagem da marca Amstel" 
+                      src='./snack_bar_dedam.png' 
+                      alt="Imagem de capa do projeto De Dam - Snack Bar em Holambra" 
                       titulo="Projeto com a Amstel" 
                       descricao="Lançamento do De Dam - Snack Bar em Holambra" 
                       link="/Amstel" 
                   />
                   <Card 
-                      src='./logo_martin_holandesa.png'
-                      alt='Imagem do logo da empresa Martin Holandesa' 
+                      src='./capa_aniverssario.png'
+                      alt='Imagem de capa da campanha de 67 anos da Martin Holandesa' 
                       titulo="Campanha de 67 anos da Martin Holandesa" 
-                      descricao="Criação da campanha de 67 anos da Martin Holandesa"
+                      descricao="Em parceria com a 3 Corações"
                       link="/TresCoracoes" 
                   />
                     
@@ -105,13 +105,13 @@ export default function Home() {
             subtitulo="O que oferecemos"
             sentido="listaDireita2"
             itens={[
-              {item: "SEO", descricao: "Otimização de sites e conteúdo para melhor ranqueamento nos resultados de pesquisa orgânica, aumentando a visibilidade online da sua empresa."},
-              {item: "Marketing Digital", descricao: "Conjunto de estratégias online para atrair, converter e fidelizar clientes, utilizando canais como SEO, mídias sociais, email marketing, etc."},
-              {item: "Campanhas de Publicidade", descricao: "Criação e gerenciamento de anúncios pagos em plataformas como Google Ads, Facebook Ads, Instagram Ads, etc., para alcançar um público específico e gerar resultados."},
-              {item: "Gestão de Redes Sociais", descricao: "Criação e gerenciamento de perfis em redes sociais como Facebook, Instagram, Twitter, etc., para construir relacionamento com o público, divulgar sua marca e gerar leads."},
-              {item: "Sites e Lojas Online", descricao: "Criação, desenvolvimento e manutenção de sites e lojas virtuais personalizados para sua empresa, otimizados para conversão e experiência do usuário."},
-              {item: "E-commerce", descricao: "Implementação e gestão de plataformas de e-commerce para venda de produtos ou serviços online, com foco em segurança, logística e atendimento ao cliente."},
-              {item: "Desenvolvimento Web", descricao: "Criação de websites e aplicações web sob medida para as necessidades da sua empresa, utilizando tecnologias modernas e design responsivo."}
+              {img: "./icone_foguete.svg", item: "SEO", descricao: "Otimização de sites e conteúdo para melhor ranqueamento nos resultados de pesquisa orgânica, aumentando a visibilidade online da sua empresa."},
+              {img: "./icone_foguete.svg", item: "Marketing Digital", descricao: "Conjunto de estratégias online para atrair, converter e fidelizar clientes, utilizando canais como SEO, mídias sociais, email marketing, etc."},
+              {img: "./icone_foguete.svg", item: "Campanhas de Publicidade", descricao: "Criação e gerenciamento de anúncios pagos em plataformas como Google Ads, Facebook Ads, Instagram Ads, etc., para alcançar um público específico e gerar resultados."},
+              {img: "./icone_foguete.svg", item: "Gestão de Redes Sociais", descricao: "Criação e gerenciamento de perfis em redes sociais como Facebook, Instagram, Twitter, etc., para construir relacionamento com o público, divulgar sua marca e gerar leads."},
+              {img: "./icone_foguete.svg", item: "Sites e Lojas Online", descricao: "Criação, desenvolvimento e manutenção de sites e lojas virtuais personalizados para sua empresa, otimizados para conversão e experiência do usuário."},
+              {img: "./icone_foguete.svg", item: "E-commerce", descricao: "Implementação e gestão de plataformas de e-commerce para venda de produtos ou serviços online, com foco em segurança, logística e atendimento ao cliente."},
+              {img: "./icone_foguete.svg", item: "Desenvolvimento Web", descricao: "Criação de websites e aplicações web sob medida para as necessidades da sua empresa, utilizando tecnologias modernas e design responsivo."}
             ]}
           
           />
@@ -134,24 +134,24 @@ export default function Home() {
                 <div className={styles.cards}>
 
                     <Card 
-                        src='./logo_heineken.png'
-                        alt='Imagem do logo da marca Heineken' 
+                        src='./heinekein_capa.png'
+                        alt='Imagem de capa com comemoração da estação de coleta de long neck Heineken' 
                         titulo="Projeto com a Heineken" 
                         descricao="Lançamento de uma estação de coleta de long neck Heineken"
                         link="/Heinekein" 
                     />
                     <Card 
-                        src='./amstel_logo.jpg' 
-                        alt="Imagem da marca Amstel" 
+                        src='./snack_bar_dedam.png' 
+                        alt="Imagem de capa do projeto De Dam - Snack Bar em Holambra" 
                         titulo="Projeto com a Amstel" 
                         descricao="Lançamento do De Dam - Snack Bar em Holambra" 
                         link="/Amstel" 
                     />
                     <Card 
-                        src='./logo_martin_holandesa.png'
-                        alt='Imagem do logo da empresa Martin Holandesa' 
+                        src='./capa_aniverssario.png'
+                        alt='Imagem de capa da campanha de 67 anos da Martin Holandesa' 
                         titulo="Campanha de 67 anos da Martin Holandesa" 
-                        descricao="Criação da campanha de 67 anos da Martin Holandesa"
+                        descricao="Em parceria com a 3 Corações"
                         link="/TresCoracoes" 
                     />
 

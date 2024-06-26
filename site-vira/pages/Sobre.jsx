@@ -69,7 +69,7 @@ export default function Sobre() {
         <section className={styles.apresentacao}>
 
           <Apresentacao 
-              src="./logo_vira.svg" 
+              src="./logo_vira 2.svg" 
               alt="Logo da empresa de marketing Vira"
               titulo="Vira"
               subtitulo="A empresa"
@@ -97,7 +97,7 @@ export default function Sobre() {
               sentido={sentidoDireito}
           />
 
-          <Apresentacao
+          {/* <Apresentacao
               src="./service.svg"
               alt="Ilustração de um computador com abas do navegaodr abertas"
               titulo="Serviços"
@@ -112,7 +112,7 @@ export default function Sobre() {
                 "E-commerce",
                 "Desenvolvimento Web"
               ]}
-          />
+          /> */}
               
         </section>
       </Layout>

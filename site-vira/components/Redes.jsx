@@ -40,7 +40,7 @@ export default function Redes() {
                     /> 
                 </div>
             </div>
-            <img src="./logo_vira.svg" alt="Logo da empresa Vira" className={styles.logo} />
+            <img src="./logo_vira 2.svg" alt="Logo da empresa Vira" className={styles.logo} />
         </div>
 
     )
