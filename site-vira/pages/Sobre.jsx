@@ -57,9 +57,9 @@ import useScreenWidth from '../components/UseScreenWidth';
 
 export default function Sobre() {
   const screenWidth = useScreenWidth();
-  const sentidoEsquerdo = screenWidth > 412 ? 'esquerda' : 'direita';
-  const sentidoDireito = screenWidth > 412 ? 'direita' : 'direita';
-  const sentidoLista = screenWidth > 412 ? 'lista' : 'listaDireita';
+  const sentidoEsquerdo = screenWidth > 414 ? 'esquerda' : 'direita';
+  const sentidoDireito = screenWidth > 414 ? 'direita' : 'direita';
+  const sentidoLista = screenWidth > 414 ? 'lista' : 'listaDireita';
 
   
 
