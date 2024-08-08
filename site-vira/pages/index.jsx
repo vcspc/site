@@ -91,7 +91,7 @@ export default function Home() {
           <Apresentacao 
             texto1="Invista em quem realmente entende do assunto e está pronto para virar a página da sua história no digital"
             texto2="Agende uma consultoria gratuita e descubra como podemos transformar o seu negócio"
-            src="./logo_vira.png"
+            src="./LOGO-01.png"
             alt="Logotipo da empresa Vira Negócios"
             botao="AGENDE AQUI"
             link="https://wa.me/5511977676130"

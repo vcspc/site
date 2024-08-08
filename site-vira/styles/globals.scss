@@ -142,7 +142,7 @@
 }
 
 @media (max-width: 414px) {
-    // Coloque aqui as adaptações de estilo para telas de até 412 pixels
+    // Coloque aqui as adaptações de estilo para telas de até 414 pixels
 
     .body {
 
@@ -152,7 +152,7 @@
                 
 
                 img {
-
+                    width: 3.5rem;
                 }
                 
                 .menu {
@@ -205,5 +205,11 @@
         }
         
     }
+}
+
+@media (max-width: 375px) {
+
+  
+
 }
 

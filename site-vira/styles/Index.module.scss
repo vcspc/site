@@ -185,3 +185,71 @@
     
 
 }
+
+@media (max-width: 375px) {
+    
+    .apresentacao {
+        
+
+        .socios {
+            
+           
+
+            .marketing {
+            
+                @include texto-destaque ($fonte-media - 0.2rem, $cor-texto);
+                
+            }
+    
+            img {
+                
+            }
+    
+            .codigo {
+                @include texto-destaque ($fonte-media - 0.2rem, $cor-texto);
+                
+            }
+
+        }
+
+        
+    }
+    
+    .destaques {
+        
+    
+        .divisoria {
+            
+    
+            hr {
+                
+            }
+    
+            .divisoria__texto {
+                @include texto-destaque ($fonte-extra-pequena - 0.2rem, $cor-texto-destaques);
+                
+            }
+        }
+        
+        .projetos {
+            
+    
+            .vejamais {
+               
+    
+    
+                &:hover {
+                    
+                }
+    
+            
+            }
+
+            .cards {
+                
+            }
+    
+        }
+    }
+
+}

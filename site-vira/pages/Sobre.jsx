@@ -69,7 +69,7 @@ export default function Sobre() {
         <section className={styles.apresentacao}>
 
           <Apresentacao 
-              src="./logo_vira 2.svg" 
+              src="./LOGO-01.png" 
               alt="Logo da empresa de marketing Vira"
               titulo="Vira"
               subtitulo="A empresa"

@@ -6,7 +6,7 @@ function Layout({ children }) {
     <div className='body'>
       <header>
         <div className="container">
-          <Link href="/"> <img src="./logo_vira_bg_branco.svg" alt="logo do site" className="logo"/> </Link>
+          <Link href="/"> <img src="./LOGO-02.png" alt="logo do site" className="logo"/> </Link>
           <nav className="menu">
             <ul className="lista_menu">
               <li className="item_menu">
