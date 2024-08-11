@@ -34,7 +34,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
     
     .card {
         @include card (20rem);
@@ -62,6 +62,60 @@
     .card:hover {
         cursor: pointer;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    }
+
+}
+
+@media (max-width: 340px) {
+    
+    .card {
+        @include card (19rem);
+        // margin: 0 0 2rem 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    
+        .card_img {
+            width: 100%;
+             
+        }
+    
+        .card_titulo {
+            @include texto-normal ($fonte-pequena, $cor-texto);
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        }
+    
+        .card_descricao {
+            @include texto-normal ($fonte-extra-pequena, $cor-texto);
+            margin: 0 0.5rem 0.5rem 0.5rem;
+            line-height: 1rem;
+        }
+    
+    }
+
+    .card:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .card {
+        @include card (18rem);
+
+        .card_titulo {
+            @include texto-normal ($fonte-pequena - 0.1rem, $cor-texto);
+            margin: 0.4rem 0.4rem 0.4rem 0.4rem;
+        }
+
+        .card_descricao {
+            @include texto-normal ($fonte-extra-pequena - 0.1rem, $cor-texto);
+            margin: 0 0.4rem 0.4rem 0.4rem;
+            line-height: 0.8rem;
+        }
+
+
+
     }
 
 }

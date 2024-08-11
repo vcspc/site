@@ -444,7 +444,7 @@
         @include container (90%, column);
         height: 23rem;
         justify-content: space-between;
-        margin: 3rem 0 2rem 0;
+        margin: 3rem 0 3rem 0;
     
     
         .textoImagemBotao__imagemTexto {
@@ -557,5 +557,55 @@
     
     
 
+
+}
+
+@media (max-width: 330px) {
+
+    .sobre__direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: 0 0 5rem 0;
+    
+        .sobre__texto__direita {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 90%;
+    
+            .sobre__texto__titulo__direita {
+                @include texto-destaque (3rem - 0.2rem, $cor-texto);
+                margin: 0 0 0.7rem 0;
+            }
+    
+            .sobre__texto__subtitulo__direita {
+                @include texto-normal ($fonte-media - 0.2rem, $cor-texto);
+                margin: 0 0 0.7rem 0;
+            }
+    
+            .sobre__texto__conteudo__direita {
+                @include texto-normal ($fonte-pequena - 0.1rem, $cor-texto);
+                line-height: 25px;
+                text-align: start;
+            }
+
+        }
+    
+        .sobre__img__direita {
+            width: 90%;
+            margin: 2rem 0 0 0;
+    
+            img {
+                width: 100%;
+            }
+        
+        }
+
+
+    }
 
 }

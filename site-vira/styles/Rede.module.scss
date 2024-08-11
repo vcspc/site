@@ -62,3 +62,36 @@
     }
     
 }
+
+@media (max-width: 375px) {
+    
+    .rede {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 9rem;
+    
+        .rede__link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    
+    
+        .rede__img{
+            width: 2.5rem;
+        }
+    
+        .rede__texto{
+            @include texto-normal ($fonte-pequena, $cor-texto);
+            margin-left: 0.5em;
+            font-weight: 600;
+    
+    
+        }
+    }
+
+}
